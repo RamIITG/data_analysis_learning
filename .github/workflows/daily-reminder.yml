@@ -1,0 +1,18 @@
+﻿name: Daily 10:00 AM IST Reminder
+
+on:
+  schedule:
+    # Runs daily at 04:30 UTC = 10:00 IST
+    - cron: '30 4 * * *'
+  workflow_dispatch: {}
+
+jobs:
+  create-reminder-issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create daily reminder issue
+        uses: peter-evans/create-issue-from-file@v4
+        with:
+          title: "Daily Study Reminder — Data Analysis Tasks (10:00 AM IST)"
+          content-file: .github/issue-templates/daily_reminder.md
+          labels: reminder, daily
