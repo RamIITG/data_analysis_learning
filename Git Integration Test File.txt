@@ -1,0 +1,10 @@
+# Git Integration Test File
+
+This is a test file to verify git integration is working correctly.
+
+## Test Cases
+- [ ] Initialize repository
+- [ ] Stage changes
+- [ ] Create commits
+- [ ] Push to remote
+- [ ] Pull updates
