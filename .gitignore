@@ -1,0 +1,22 @@
+﻿# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+venv/
+
+# VS Code
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Data — prevent accidental large uploads
+*.csv
+*.xlsx
+*.pbix
+*.db
+*.sqlite
+
+# Logs
+*.log
